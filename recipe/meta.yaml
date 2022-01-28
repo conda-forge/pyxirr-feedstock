@@ -1,5 +1,5 @@
 {% set name = "pyxirr" %}
-{% set version = "0.7.1" %}
+{% set version = "0.7.2" %}
 
 
 package:
@@ -8,11 +8,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyxirr-{{ version }}.tar.gz
-  sha256: a1564a9d2959c0ce8e8433133eb9cd7bdce4fa826f8858197887a1d9954e9af3
+  sha256: 550ca1660d92e49da56a171bac22d152c5cf44abc9a031197f5b537f6dba368e
 
 build:
-  number: 1
-  skip: True  # [py<36]
+  number: 0
+  skip: true  # [py<36]
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -20,7 +20,7 @@ requirements:
     - {{ compiler('c') }}
     - {{ compiler('rust') }}
   host:
-    - maturin
+    - maturin >=0.11,<0.12
     - pip
     - python
   run:
