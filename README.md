@@ -1,11 +1,11 @@
-About pyxirr
-============
+About pyxirr-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyxirr-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/Anexen/pyxirr
 
 Package license: Unlicense
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyxirr-feedstock/blob/main/LICENSE.txt)
 
 Summary: Rust-powered collection of financial functions for Python.
 
