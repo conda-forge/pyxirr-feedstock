@@ -12,7 +12,7 @@ source:
 
 build:
   number: 0
-  skip: true  # [py<36]
+  skip: true  # [py<37] or [py>312]
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -20,7 +20,7 @@ requirements:
     - {{ compiler('c') }}
     - {{ compiler('rust') }}
   host:
-    - maturin >=0.11,<0.12
+    - maturin >=0.14,<0.15
     - pip
     - python
   run:
