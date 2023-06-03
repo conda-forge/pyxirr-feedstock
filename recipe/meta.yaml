@@ -1,5 +1,5 @@
 {% set name = "pyxirr" %}
-{% set version = "0.9.0" %}
+{% set version = "0.9.1" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyxirr-{{ version }}.tar.gz
-  sha256: ed075ad6243ea9213a838ad35d5946505978eaee48cc44e4bb9dd71d59f7d047
+  sha256: ba2f44e1477d27d0b9f3a774e369d3d0da0613a8596379ccf9de8782a0c2513b
 
 build:
-  number: 2
+  number: 0
   skip: true  # [py<37] or [py>312]
   script: {{ PYTHON }} -m pip install . -vv
 
