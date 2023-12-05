@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyxirr-{{ version }}.tar.gz
-  sha256: 3cd8152307fda27c810c4179f36b2d6bd696552363e635aa505619fed77a9c1c
+  url: https://github.com/Anexen/{{ name }}/archive/refs/tags/v{{ version }}.zip
+  sha256: 5570d4acbcf31f10727daf2c2ef1955577a9ccb09856672147e07f66886cd0e5
 
 build:
   number: 0
