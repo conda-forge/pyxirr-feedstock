@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/Anexen/{{ name }}/archive/refs/tags/v{{ version }}.zip
-  sha256: 5570d4acbcf31f10727daf2c2ef1955577a9ccb09856672147e07f66886cd0e5
+  sha256: a171cae827d1fce9454171d8a0d42351148246a387d2615a9eb15eb928c53392
 
 build:
   number: 0
