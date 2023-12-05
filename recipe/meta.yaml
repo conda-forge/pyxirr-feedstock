@@ -1,5 +1,5 @@
 {% set name = "pyxirr" %}
-{% set version = "0.9.3" %}
+{% set version = "0.10.0" %}
 
 
 package:
@@ -7,12 +7,12 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyxirr-{{ version }}.tar.gz
-  sha256: b520420028228c92284142f928a96dab19b49be6b9adcb14f85d89331c4217f1
+  url: https://github.com/Anexen/{{ name }}/archive/refs/tags/v{{ version }}.zip
+  sha256: a171cae827d1fce9454171d8a0d42351148246a387d2615a9eb15eb928c53392
 
 build:
-  number: 1
-  skip: true  # [py<37] or [py>313]
+  number: 0
+  skip: true  # [py<37] or [py>312]
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
