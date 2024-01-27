@@ -1,5 +1,5 @@
 {% set name = "pyxirr" %}
-{% set version = "0.10.1" %}
+{% set version = "0.10.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/Anexen/{{ name }}/archive/refs/tags/v{{ version }}.zip
-  sha256: 856c5409bd001554d55de938dfa77a7506dc0cf9d1e9e3466aa566d4522c0991
+  sha256: 06cca6fb328f626e7906c575a430f5b4991bfeb37ba93ef25f97924596ab7ee9
 
 build:
   number: 0
