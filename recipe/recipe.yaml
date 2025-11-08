@@ -14,13 +14,16 @@ source:
 
 build:
   number: 0
-  script: ${{ PYTHON }} -m pip install . -vv
+  script: 
+    - cargo-bundle-licenses --format yaml --output THIRDPARTY.yml
+    - ${{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
     - ${{ compiler('c') }}
     - ${{ stdlib('c') }}
     - ${{ compiler('rust') }}
+    - cargo-bundle-licenses
   host:
     - maturin >=1,<2
     - pip
@@ -37,7 +40,9 @@ tests:
 about:
   summary: Rust-powered collection of financial functions for Python.
   license: Unlicense
-  license_file: LICENSE
+  license_file:
+    - LICENSE
+    - THIRDPARTY.yml
   homepage: https://github.com/Anexen/pyxirr
 
 extra:
